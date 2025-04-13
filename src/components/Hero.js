@@ -6,7 +6,8 @@ const Hero = () => {
       <div className="hero-overlay"></div>
       <div className="hero-content">
         <h1>D-FISH</h1>
-        <p>Fresh countryside fish delivered across Tamil Nadu</p>
+        <p>Fresh countryside fish, expertly cleaned and cut.
+        Delivered straight to your doorstep across Tamil Nadu.</p>
         <div className="hero-buttons">
           <a href="#fish" className="btn">
             Explore Our Fish

@@ -105,7 +105,7 @@ const FishDisplay = () => {
       <div className="container">
         <h2 className="section-title">Our Fresh Fishes</h2>
         <p className="section-description">
-          We offer a variety of freshwater fishes caught from rivers and ponds across Tamil Nadu. All our fishes are
+          We offer a variety of freshwater fishes caught from rivers and ponds across Tamil Nadu. All our fishes are cutted,
           cleaned and delivered fresh to your doorstep.
         </p>
 

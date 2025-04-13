@@ -70,7 +70,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {currentYear} D-Fish. All Rights Reserved. Made By Vetrivelan</p>
+          <p>&copy; {currentYear} D-Fish. All Rights Reserved. Made By Vetrivelan R</p>
           <div className="footer-social">
             <a href="#" className="social-icon">
               <i className="icon-facebook"></i>
