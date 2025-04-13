@@ -1,0 +1,196 @@
+.fish-display {
+  background-color: #f5f7fa;
+}
+
+.section-description {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  color: #555;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.carousel {
+  display: flex;
+  gap: 30px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.fish-card {
+  flex: 0 0 calc(33.333% - 20px);
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.fish-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.fish-image-container {
+  height: 220px;
+  overflow: hidden;
+}
+
+.fish-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+
+.fish-card:hover .fish-image {
+  transform: scale(1.1);
+}
+
+.fish-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.fish-info h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #0a3d62;
+}
+
+.fish-info p {
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.fish-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f39c12;
+  margin-bottom: 5px;
+}
+
+.delivery-text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.order-btn {
+  background-color: #0a3d62;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.order-btn:hover {
+  background-color: #f39c12;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.carousel-button:hover {
+  background-color: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-button.prev {
+  left: -25px;
+}
+
+.carousel-button.next {
+  right: -25px;
+}
+
+.arrow {
+  border: solid #0a3d62;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+}
+
+.right {
+  transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background-color: #0a3d62;
+  transform: scale(1.2);
+}
+
+@media (max-width: 992px) {
+  .fish-card {
+    flex: 0 0 calc(50% - 15px);
+  }
+}
+
+@media (max-width: 768px) {
+  .fish-card {
+    flex: 0 0 100%;
+  }
+
+  .carousel {
+    gap: 0;
+  }
+
+  .carousel-button.prev {
+    left: 10px;
+  }
+
+  .carousel-button.next {
+    right: 10px;
+  }
+}
